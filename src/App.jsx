@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <div className='bg-black text-slate-100 h-screen'>
+      <div className='bg-black text-slate-100 h-screen relative'>
         <Outlet />
       </div>
     </>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-export default function ImageContainer () {
+export default function ImageContainer ({ showImages }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -18,12 +18,10 @@ export default function ImageContainer () {
     });
   }, [])
 
-  console.log(data)
-
   return (
-    <div className='image-container top-0 columns-3 m-5'>
+    <div className='absolute top-0 columns-3 m-5'>
       {data.map((item, index) => (
-        <div key={index} className="my-2">
+        <div key={index} className={`transition-all ease-in-out duration-[2000ms] my-2 ${showImages ? `opacity-100` : `opacity-0 translate-y-[100rem]`}`}>
           <img src={item.url}></img>
         </div>
       ))}
