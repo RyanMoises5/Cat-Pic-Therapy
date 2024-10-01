@@ -71,6 +71,6 @@ button:focus-visible {
 @tailwind components;
 @tailwind utilities;
 
-/* #root {
-  background-color: aqua;
-} */
+body {
+  background-color: black;
+}
