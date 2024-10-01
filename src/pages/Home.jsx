@@ -11,12 +11,9 @@ function Home() {
       <TypeAnimation
       sequence={[
         'hey.',
-        1000,
-        // '',
-        // 1000,
-        // 'hard day?',
-        // 2000,
-        // 'DONE',
+        500,
+        '',
+        500,
         () => {
           statusShowImages(true)
         },
